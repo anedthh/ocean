@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" class="rock-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2050 OCEAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <audio id='audio_play' src='./sound/visit_sound.wav'></audio>   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+<link rel="stylesheet" href="./css/oceancss.css">
+<link rel="stylesheet" href="./css/animate.css">
+
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+<script src="./js/descrambler.js"></script>
+<script src="./js/main.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+    new WOW().init();
+
+  
+</script>
+
+<script>
+
+$('#container').start_spinwriter({
+    'text' :'jQuery Spinner Text Plugin Example'
+});
+
+
+$('#container').start_spinwriter({
+    'text' :'text to animate',
+    'interval' : 10,//milliseconds
+    'css' : {// additional CSS
+        'color':'#333'
+    }
+});
+
+
+
+    // 클릭시 이미지 변화
+    // var i = 0;
+    // function toggle_object(post_id)
+    // {  
+    //     i = i + post_id;
+    //     var obj = document.getElementById('test');  
+    //     if(!obj) return;  
+    
+    //     if(i%2!=0)
+    //     {  
+    //         obj.src="./img/breack/rock3_01.png";
+    //     }
+    //     else
+    //     {  
+    //         obj.src="./img/breack/rock3_00.png";
+    //     }
+    // }
+
+    var i = 0;
+    function toggle_object(post_id)
+    {  
+        i = i + post_id;
+        var obj = document.getElementById('test');  
+        if(!obj) return;  
+    
+        if(i%2!=0)
+        {  
+            obj.src="./img/breack/rock3_01.png";
+        }
+        else 
+        {  
+            obj.src="./img/breack/rock3_00.png";
+        }
+        
+    }
+
+
+
+// 오디오소리
+
+</script>
+</head>
+
+
+
+
+
+<body>
+<!-- <audio autoplay controls> 
+    <source src="./sound/website_background.mp3" type="audio/mp3"> 
+</audio> -->
+
+
+<!-- <input type="button" onclick="audio.play();" value="PLAY">  -->
+<!--재생-->
+<!-- <input type="button" onclick="audio.pause();" value="PAUSE">  -->
+<!--일시정지-->
+
+
+<div class="intro">
+
+    <div class="intro_toptxt"> 
+        <span>
+            > VISIT SITEVISIT SITEVISIT SITEVISIT SITE....<br/>
+            > SITEVISIT SITEVISIT SITE....<br/>
+            > SITEVISIT SITEVISIT SITE....
+        </span>
+    </div>
+
+    <div class="intro_deco1">
+        <div class="intro_deco01"></div>
+        <div class="intro_deco02"></div>
+    </div>
+
+
+    <div class="intro_visit" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+        <div class="intro_topleft"></div>
+        <div class="intro_botleft"></div>
+        <div class="intro_topright"></div>
+        <div class="intro_botright"></div>
+        <span>VISIT SITE</span>
+        <audio id='mySound' src='./sound/visit_sound.wav'/>
+    </div>
+
+    <div class="intro_deco1-1">
+        <div class="intro_deco1-01"></div>
+        <div class="intro_deco1-02"></div>
+        <span> SITEVISIT SITEVISIT SITE<br/>
+            SITEVISIT SIT<br/>
+            EVISIT SITEVISIT SIT</span>
+        <div class="intro_deco1-03"></div>
+        <div class="intro_deco1-04"></div>
+        
+        <div class="intro_deco1-05"></div>
+        <div class="intro_deco1-06"></div>
+        <div class="intro_deco1-07">
+            <div class="intro_deco1-07-1"></div>
+            <div class="intro_deco1-07-2"></div>
+        </div>
+        
+        <div class="intro_deco1-08"></div>
+    </div>
+
+    <div class="intro_deco2">
+        <div class="intro_deco03"></div>
+        <div class="intro_deco04"></div>
+    </div>
+    <div class="intro_deco3">
+        <div class="intro_deco05"></div>
+        <div class="intro_deco06"></div>
+        <div class="intro_deco07"></div>
+        <div class="intro_deco08"></div>
+    </div>
+    
+</div>
+
+<div class="head_top">
+    <div class="website_bg">
+        <div class="website_bg_load">
+            <span class="bg_stroke"></span>
+            <span class="bg_stroke"></span>
+            <span class="bg_stroke"></span>
+            <span class="bg_stroke"></span>
+            <span class="bg_stroke"></span>
+            <span class="bg_stroke"></span>
+            <span class="bg_stroke"></span>
+        </div>
+        <div class="website_bg_load_pause">
+            <span class="bg_stroke2"></span>
+            <span class="bg_stroke2"></span>
+            <span class="bg_stroke2"></span>
+            <span class="bg_stroke2"></span>
+            <span class="bg_stroke2"></span>
+            <span class="bg_stroke2"></span>
+            <span class="bg_stroke2"></span>
+        </div>
+
+        <audio id="audio" autoplay>
+            <source src="./sound/website_background.mp3" type="audio/mpeg" >
+        </audio>
+        <button id="playPauseBTN" onclick="playPause()">    
+            
+            <span style="color:#34ff67;;">PLAY</span>
+        </button>
+    </div>
+
+
+    <div class="website_menu">
+        <button class="slide-open" id="slide-open"> <!--예제를 위한 메뉴버튼을 담을 버튼-->
+            <span class="burgur" id="burgur">  <!--버거메뉴 버튼 가운데 라인-->
+              <span class="top-line"></span>   <!--버거메뉴 버튼 윗 라인-->
+              <span class="bot-line"></span>   <!--버거메뉴 버튼 아랫 라인-->
+            </span>
+        </button> 
+       
+    </div>
+</div>
+
+
+
+
+
+<div class="side_menubar-box">
+    <div class="side_menubar">
+        <ul>
+            <li><a href="#sss1">HOME</a></li>
+            <li><a href="#sss2">New Rock</a></li>
+            <li><a href="#sss3">PyroPlastic</a></li>
+            <li><a href="#sss4">Glass beach</a></li>
+            <li><a href="#sss5">Breack Plastic</a></li>
+            <li><a href="#sss6">Together</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<header>
+    <div class="header scape">
+        <div class="header_progress-bar_bg"></div>
+        <!-- <div class="header_progress-bar"></div> -->
+        
+        <div class="header_nav01">
+            <a href="#sss1">
+                <p>HOME</p>
+                <div class="header_circle">
+                    <div class="header_circle1">
+                        <div class="header_circle2">
+                            <div class="header_circle3">
+                                <div class="header_circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="header_nav01">
+            <a href=".section2">
+                <p>New Rock</p>
+                <div class="header_circle">
+                    <div class="header_circle1">
+                        <div class="header_circle2">
+                            <div class="header_circle3">
+                                <div class="header_circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="header_nav01">
+            <a href=".section3">
+                <p>PyroPlastic</p>
+                <div class="header_circle">
+                    <div class="header_circle1">
+                        <div class="header_circle2">
+                            <div class="header_circle3">
+                                <div class="header_circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="header_nav01">
+            <a href=".section4">
+                <p>Glass beach</p>
+                <div class="header_circle">
+                    <div class="header_circle1">
+                        <div class="header_circle2">
+                            <div class="header_circle3">
+                                <div class="header_circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="header_nav01">
+            <a href=".section5">
+                <p>Breack Plastic</p>
+                <div class="header_circle">
+                    <div class="header_circle1">
+                        <div class="header_circle2">
+                            <div class="header_circle3">
+                                <div class="header_circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="header_nav01">
+            <a href=".section7">
+                <p>Together</p>
+                <div class="header_circle">
+                    <div class="header_circle1">
+                        <div class="header_circle2">
+                            <div class="header_circle3">
+                                <div class="header_circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<section>
+
+<div class="section1 full-landing-image" id="sss1">
+    <div class="s1_txt pano">
+        <div class="s1_txt_the">
+            <p>The</p>
+            <div class="s1_txt_cursor cursor"></div>
+        </div>
+        
+        <p class="s1_txt_ocean green">
+            OCEAN
+        </p>
+    </div>
+    <div class="section_s1 full-landing-image">
+        <div class="s1_combus"><img src="./img/section_combustion.png"></div>
+        <div class="s1_danger scape">
+            <p>DANGER</p>
+            <div class="s1_dnager_00 full-landing-image">
+                <div class="s1_dnager_01">
+                    <p>The</p> 
+                    <p class=" scramble">OCEAN</p>
+                </div> 
+                <img src="./img/section_danger_aim.png">
+                <ul class="s1_dnager_03">
+                    <li>Plastic</li>
+                    <li>Lead</li>
+                    <li>Stone</li>
+                </ul>
+            </div>
+           
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+
+
+
+ <!-- 뉴락 -->
+
+ <div class="section2"  id="sss2">
+    <div class="section_s2 container">
+        <div class="section_s2_txt01 wow fadeIn" data-wow-duration="4s" data-wow-offset="30">
+            <p class="pano">SAMPLE #01</p>
+            <div class="section_s2_line"></div>
+            <P>2020 Oct.</P>
+
+            <div class="section_s2_txt02">
+                <div class="section_s2_progress">
+                    <p>Plastic Concentration</p>
+                    <div class="section_s2_progress-bar1 progress-ct">
+                        <span data-progress="80"></span>
+                    </div>
+                        <p>Rock Concentration</p>
+                    <div class="section_s2_progress-bar2 progress-ct">
+                        <span data-progress="20"></span>
+                    </div>
+                </div>
+                
+                <div class="section2_hexagon">
+                    <div class="hexagon1"><span>Plastic</br>80%</span></div>
+                    <div class="hexagon2"><span>Stone</br>20%</span></div>
+                    <div class="hexagon3"></div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="section_s2_img" onmouseover="PlaySound('newrockSound')" onmouseout="StopSound('newrockSound')">
+            <div class="section_s2_circle01">
+                <img src="img/circle/c_cir1_01.svg" class="c_cir1_01 svg0" alt="" >
+                <img src="img/circle/c_cir1_02.svg" class="c_cir1_02 svg" alt="" >
+                <img src="img/circle/c_cir1_03.svg" class="c_cir1_03 svg" alt="" >
+                <img src="img/circle/c_cir1_04.svg" class="c_cir1_04 svg0" alt="" >
+                <img src="img/circle/c_cir1_05.svg" class="c_cir1_05 svg" alt="" >
+                <img src="img/circle/c_cir1_06.svg" class="c_cir1_06 svg" alt="" >
+                <img src="img/circle/c_cir1_07.svg" class="c_cir1_07 svg" alt="" >
+                <img src="img/circle/c_cir1_08.svg" class="c_cir1_08 svg" alt="" >
+                <img src="img/circle/c_cir1_09.svg" class="c_cir1_09 svg" alt="" >
+                <img src="img/section2_newrock.png" class="newrock_img" alt="뉴락이미지">
+                
+            </div>
+        </div>
+        <!-- <audio id='newrockSound' src='./sound/submarine.wav'/> -->
+
+        <div class="section_s2_txt03 wow fadeIn" data-wow-duration="4s">
+            <p class="pano">New Rock</p>
+            <p>Asia</p>
+            <p>October 2020. Incheon.
+                Something that everyone 
+                has held in their hands 
+                at least once.You can tell 
+                by looking at the last 
+                picture. It's a plastic 
+                bottle. The bottom of the 
+                bottle. The hardest part is 
+                going into the water.
+                It remains unspattered.
+            </p>
+            <p class="pano">Found it</p>
+            <p>Incheon, South Korea</p>
+        </div>
+
+    </div>
+</div>
+
+
+ <!-- 프로플라스틱 -->
+
+ <div class="section3"  id="sss3">
+    <div class="section_s3 container">
+        <div class="section_s2_txt01 wow fadeIn" data-wow-duration="4s">
+            <p class="pano">SAMPLE #02</p>
+            <div class="section_s2_line"></div>
+            <P>??????</P>
+
+            <div class="section_s2_txt02">
+                <div class="section_s2_progress">
+                    <p>Plastic Concentration</p>
+                    <div class="section_s2_progress-bar1 progress-ct">
+                        <span data-progress="100"></span>
+                    </div>
+                        <p>Rock Concentration</p>
+                    <div class="section_s2_progress-bar2 progress-ct">
+                        <span data-progress="0"></span>
+                    </div>
+                </div>
+                
+                <div class="section2_hexagon">
+                    <div class="hexagon1"><span>Plastic</br>100%</span></div>
+                    <div class="hexagon2"><span>Stone</br>0%</span></div>
+                    <div class="hexagon3"></div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="section_s2_img">
+            <div class="section_s2_circle01">
+                <img src="img/circle/c_cir2_00.svg" class="c_cir2_00 svg0" alt="" >
+                <img src="img/circle/c_cir2_01.svg" class="c_cir2_01 svg" alt="" >
+                <img src="img/circle/c_cir2_02.svg" class="c_cir2_02 svg" alt="" >
+                <img src="img/circle/c_cir2_03.svg" class="c_cir2_03 svg0" alt="" >
+                <img src="img/circle/c_cir2_04.svg" class="c_cir2_04 svg0" alt="" >
+                <img src="img/circle/c_cir2_05.svg" class="c_cir2_05 svg" alt="" >
+                <img src="img/circle/c_cir2_06.svg" class="c_cir2_06 svg" alt="" >
+                <img src="img/circle/c_cir2_07.svg" class="c_cir2_07 svg" alt="" >
+                <img src="img/circle/c_cir2_08.svg" class="c_cir2_08 svg" alt="" >
+                <img src="img/circle/c_cir2_09.svg" class="c_cir2_09 svg" alt="" >
+                <img src="img/circle/c_cir2_10.svg" class="c_cir2_10 svg" alt="" >
+                <img src="img/section3_pro.png" class="propla_img wow flash">
+            </div>
+        </div>
+
+        <div class="section_s2_txt03 wow fadeIn" data-wow-duration="4s">
+            <p class="pano">PyroPlastic</p>
+            <p>Asia</p>
+            <p>Pyroplastics are known to form when pieces of plastic are melted or incinerated and thrown into the ocean. As it floats in the sea for a long time, it slowly turns gray, a color similar to stone, and the surface is also smooth, making it difficult for experts to distinguish visually.
+                It looks like a stone commonly found on the beach, so it seems to have avoided the suspicion that it is garbage.
+                 
+            </p>
+            <p class="pano">Found it</p>
+            <p>Beaches of southern England</p>
+        </div>
+
+    </div>
+</div>
+
+
+ <!-- 뉴락 -->
+
+ <div class="section2" >
+<div class="section4"  id="sss4">    
+    <div class="section_s2 container">
+        <div class="section_s2_txt01 wow fadeIn" data-wow-duration="4s">
+            <p class="pano">SAMPLE #03</p>
+            <div class="section_s2_line"></div>
+            <P>2015 Jan.</P>
+
+            <div class="section_s2_txt02">
+                <div class="section_s2_progress">
+                    <p>Glass Concentration</p>
+                    <div class="section_s2_progress-bar1 progress-ct">
+                        <span data-progress="100"></span>
+                    </div>
+                        <p>Rock Concentration</p>
+                    <div class="section_s2_progress-bar2 progress-ct">
+                        <span data-progress="0"></span>
+                    </div>
+                </div>
+                
+                <div class="section2_hexagon">
+                    <div class="hexagon1"><span>Glass</br>100%</span></div>
+                    <div class="hexagon2"><span>Stone</br>0%</span></div>
+                    <div class="hexagon3"></div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="section_s2_img">
+            <div class="section_s2_circle01">
+                <img src="img/circle/c_cir3_00.svg" class="c_cir3_00 svg0" alt="" >
+                <img src="img/circle/c_cir3_01.svg" class="c_cir3_01 svg0" alt="" >
+                <img src="img/circle/c_cir3_02.svg" class="c_cir3_02 svg" alt="" >
+                <img src="img/circle/c_cir3_03.svg" class="c_cir3_03 svg0" alt="" >
+                <img src="img/circle/c_cir3_04.svg" class="c_cir3_04 svg" alt="" >
+                <img src="img/circle/c_cir3_05.svg" class="c_cir3_05 svg" alt="" >
+                <img src="img/circle/c_cir3_06.svg" class="c_cir3_06 svg" alt="" >
+                <img src="img/circle/c_cir3_07.svg" class="c_cir3_07 svg" alt="" >
+                <img src="img/section3_glass.png" class="glass_img wow">
+            </div>
+        </div>
+
+        <div class="section_s2_txt03 wow fadeIn" data-wow-duration="4s">
+            <p class="pano">Glass beach</p>
+            <p>America</p>
+            <p>
+                In 1906, the residents of Fort Bragg built a landfill called “site1” behind the Union Lumber Company. Glass bottles, cans, and even cars were thrown away at Site 1 that was created as such. The beach, which has been swept by waves for decades, has been polished to the level of jewels, and has been transformed into works of glass craftsmanship boasting a variety of colors and shapes.
+            </p>
+            <p class="pano">Found it</p>
+            <p>Fort Bragg,North Carolina</p>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<div class="section5"  id="sss5">
+    <div class="section5_txt">
+        <p class="pano green">START GAME</p>
+        <P class="blink">Break the plastic</P>
+    </div>
+</div>
+
+<div class="section6">
+    <div class="pointer">
+        <img src="./img/rock/scope.png" alt="" draggable="false">
+    </div>
+    <div class="rock3"><img src="./img/breack/rock3_00.png" id="test" class="r3" draggable="false"><!-- <a href="#" onclick="toggle_object(1); return false;"> --></div>
+    <div class="rock1"><img src="./img/breack/rock1_00.png" draggable="false" class="r1"> </div>
+    <div class="rock2"><img src="./img/breack/rock2_00.png" draggable="false" class="r2"> </div>
+</div>
+
+
+
+<!-- bg 가상선택자 after나 before로 해주기 -->
+<div class="section7_bg">
+</div>
+<div class="section7"  id="sss6">
+    
+    <div class="section7_title">
+        <p>What can we do?</p>
+        <span>Keep It Together</span>
+    </div>
+
+
+    <div class="accordion">
+        <input type="checkbox" id="answer01">
+        <label for="answer01">
+            <div style="display: flex;">
+                <span>01</span>
+                GreenPeace<em></em>
+            </div>
+        </label>
+        <div class="section7_txt">
+            Greenpeace is an anti-nuclear group that was formed in 1970 and started as a 'Don't Make a Wave Committe'. It is an international environmental protection organization formed by 12 environmental protection activists including businessmen, university students, and journalists. In the early days, it was centered on the anti-nuclear test movement, but now it is one of the world's environmental groups that are conducting various campaigns against genetically engineered soybeans, corn, and whale projects.
+            </br></br></br>
+            <span class="btn_visit" >
+            <a href="https://www.greenpeace.org/korea/" target='_blank'>
+                <!-- <span id="audio_play" onMouseOver="document.all.music.src='./sound/visit_sound.wav'"> -->
+                <span onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+                    VISIT
+                    <div class="btn_top-left"></div>
+                    <div class="btn_top-right"></div>
+                    <div class="btn_bot-left"></div>
+                    <div class="btn_bot-right"></div>
+                </span>
+                <audio id='mySound' src='./sound/visit_sound.wav'/>
+            </a> 
+            </span>
+            </br></br>
+        </div>
+        
+    </div>
+
+    <div class="accordion">
+        <input type="checkbox" id="answer02">
+        <label for="answer02">
+            <div style="display: flex;">
+                <span>02</span>
+                Sea Shepherd Conservation Society(SSCS)<em></em>
+            </div>
+        </label>
+        <div class="section7_txt">
+            The Sea Shepherd Conservation Society (SSCS) or Sea Shepherd (English: Sea Shepherd) is an international non-profit organization advocating direct action to protect marine life. The headquarters is located in Friday Harbor, San Whan Island, Washington, USA.[1] It was founded in 1977 by Paul Watson, who left the internationally active environmental protection group Greenpeace. The group is known for its drastic actions, such as colliding and sinking whaling boats, which sank the whaling ship Sierra in 1980 and halted Japanese whaling activities on July 1, 2019.
+            </br></br></br>
+            <span class="btn_visit">
+                <a href="https://www.seashepherdglobal.org/" target='_blank'>
+                        <span onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+                            VISIT
+                            <div class="btn_top-left"></div>
+                            <div class="btn_top-right"></div>
+                            <div class="btn_bot-left"></div>
+                            <div class="btn_bot-right"></div>
+                        </span>
+                </a> 
+                <audio id='mySound' src='./sound/visit_sound.wav'/>
+            </span>
+            </br></br>
+        </div>
+        
+    </div>
+
+    <div class="accordion">
+        <input type="checkbox" id="answer03">
+        <label for="answer03">
+            <div style="display: flex;">
+                <span>03</span>
+                Professional Association of Diving Instructors (PADI)<em></em>
+            </div>
+        </label>
+        <div class="section7_txt">
+            he Professional Association of Diving Instructors (PADI) is a recreational diving membership and diver training organization founded in 1966 by John Cronin and Ralph Erickson. Cronin was originally a NAUI instructor who decided to form his own organization with Erickson, and to break diver training down into several modular courses instead of the single universal course then prevalent.
+            </br></br>
+            PADI courses range from entry level to relatively advanced recreational diver certification, several specialized diving skills courses, usually connected with specific equipment or conditions, some diving related informational courses and a range of recreational diving instructor certifications. They also offer various technical diving courses. As of January 2019, PADI is reported to have issued 27 million scuba certifications.
+            </br></br></br>
+            <span class="btn_visit">
+            <a href="https://netdonor.net/page/81717/donate/1" target='_blank'>
+                <span onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+                    VISIT
+                    <div class="btn_top-left"></div>
+                    <div class="btn_top-right"></div>
+                    <div class="btn_bot-left"></div>
+                    <div class="btn_bot-right"></div>
+                </span>
+                <audio id='mySound' src='./sound/visit_sound.wav'/>
+            </a> 
+            </span>
+            </br></br>
+        </div>
+    </div>
+
+    <div class="section7_logo">
+        <img src="./img/s7_logo1.png">
+        <img src="./img/s7_logo2.png">
+        <img src="./img/s7_logo3.png">
+    </div>
+
+</div>
+
+<footer>
+    <span>Follow me</span>
+    <a href="https://www.instagram.com/kyoyange/"  target="_blank"><img src="img/ft_logo1.png"></a> 
+    <a href="https://www.behance.net/dadadaakang" target="_blank"><img src="img/ft_logo2.png"></a> 
+</footer>
+
+
+<script>
+
+    $(".full-landing-image").ripples({
+      resolution: 200,
+      perturbance: .004,
+});
+
+
+function rockGame(){
+    const rockspace = document.querySelector(".section6");
+    const rock1 = document.querySelector(".section6 .rock1");
+    const rock2 = document.querySelector(".section6 .rock2");
+    const rock3 = document.querySelector(".section6 .rock3");
+    let cw = rockspace.offsetWidth;
+    let ch = rockspace.offsetHeight;
+    let width1 = rock1.offsetWidth;
+    let height1 = rock1.offsetHeight;
+    let width2 = rock2.offsetWidth;
+    let height2 = rock2.offsetHeight;
+    let width3 = rock3.offsetWidth;
+    let height3 = rock3.offsetHeight;
+
+    let x1;
+    let y1;
+    let x2;
+    let y2;
+    let x3;
+    let y3;
+
+    rock1.style.left = cw - width1 + "px";
+    rock2.style.top = ch - height2 + "px";
+    rock3.style.top = ch - height3 + "px";
+    rock3.style.left = cw - width3 + "px";
+
+    // 클릭 카운트
+    let i = 0;
+    let j = 0;
+    let k = 0;
+    
+    // rock1 이미지
+    const src1 = [
+        "./img/breack/rock1_02.png",
+        "./img/breack/rock1_03.png",
+        "./img/breack/rock1_04.png",
+        "./img/breack/rock1_05.png"
+    ]
+
+    // rock2 이미지
+    const src2 = [
+        "./img/breack/rock2_02.png",
+        "./img/breack/rock2_03.png",
+        "./img/breack/rock2_04.png",
+        "./img/breack/rock2_05.png"
+    ]
+
+    // rock3 이미지
+    const src3 = [
+        "./img/breack/rock3_01.png",
+        "./img/breack/rock3_02.png",
+        "./img/breack/rock3_03.png",
+        "./img/breack/rock3_04.png",
+    ]
+
+    // rock1 뿌시기
+    rock1.addEventListener("click",function(){
+        if(i >= 3){
+            const sound = new Audio("./sound/extinct_effect.mp3");
+            sound.volume = 0.5;
+            sound.play();
+            this.remove();
+        }
+        else{
+            i++;
+            const sound = new Audio("./sound/break_effect.mp3");
+            this.firstChild.setAttribute("src",src1[i]);
+            sound.volume = 0.7;
+            sound.play();
+        }
+        setTimeout(function(){
+            width1 = rock1.offsetWidth;
+            height1 = rock1.offsetHeight;
+        },10)
+    })
+
+    // rock2 뿌시기
+    rock2.addEventListener("click",function(){
+        if(j >= 3){
+            const sound = new Audio("./sound/extinct_effect.mp3");
+            sound.volume = 0.5;
+            sound.play();
+            this.remove();
+        }
+        else{
+            j++;
+            const sound = new Audio("./sound/break_effect.mp3");
+            this.firstChild.setAttribute("src",src2[j]);
+            sound.volume = 0.7;
+            sound.play();
+        }
+        setTimeout(function(){
+            width2 = rock2.offsetWidth;
+            height2 = rock2.offsetHeight;
+        },10)
+
+    })
+
+    // rock3 뿌시기
+    rock3.addEventListener("click",function(){       
+        if(k >= 3){
+            const sound = new Audio("./sound/extinct_effect.mp3");
+            sound.volume = 0.5;
+            sound.play();
+            this.remove();
+        }
+        else{
+            k++;
+            const sound = new Audio("./sound/break_effect.mp3");
+            this.firstChild.setAttribute("src",src3[k]);
+            sound.volume = 0.7;
+            sound.play();
+        }
+        setTimeout(function(){
+            width3 = rock3.offsetWidth;
+            height3 = rock3.offsetHeight;
+        },10)
+    })
+
+    function rockMove(){
+        let rock1X = rock1.offsetLeft
+        let rock1Y = rock1.offsetTop
+        let rock2X = rock2.offsetLeft
+        let rock2Y = rock2.offsetTop
+        let rock3X = rock3.offsetLeft
+        let rock3Y = rock3.offsetTop
+
+        if (rock1X + width1 >= cw) x1 = -1;
+        if (rock1X <= 0) x1 = 1;
+        if (rock1Y + height1 >= ch) y1 = -1;
+        if (rock1Y <= 0) y1 = 1;
+
+        if (rock2X + width2 >= cw) x2 = -1;
+        if (rock2X <= 0) x2 = 1;
+        if (rock2Y + height2 >= ch) y2 = -1;
+        if (rock2Y <= 0) y2 = 1;
+
+        if (rock3X + width3 >= cw) x3 = -1;
+        if (rock3X <= 0) x3 = 1;
+        if (rock3Y + height3 >= ch) y3 = -1;
+        if (rock3Y <= 0) y3 = 1;
+
+        rock1.style.left = rock1X + x1 + "px";
+        rock1.style.top = rock1Y + y1 + "px";
+        
+        rock2.style.left = rock2X + x2 + "px";
+        rock2.style.top = rock2Y + y2 + "px";
+
+        rock3.style.left = rock3X + x3 + "px";
+        rock3.style.top = rock3Y + y3 + "px";
+    }
+
+    setInterval(rockMove, 20);
+}
+
+
+// 인트로페이지 닫힘버튼
+$(".intro_visit").on("click",function(){
+    
+    $(".intro").fadeOut()
+    $("html").css("overflow","auto")
+    $("#audio").on('click',playPause())
+
+    rockGame();
+})
+
+// 플라스틱 유리 돌맹이 게이지
+$(".section_s2_progress-bar1 span").each(function () {
+  $(this).animate(
+    {
+      width: $(this).attr("data-progress") + "%",
+    },
+    1000
+  );
+//   $(this).text($(this).attr("data-progress") + "%");
+});
+
+$(".section_s2_progress-bar2 span").each(function () {
+  $(this).animate(
+    {
+      width: $(this).attr("data-progress") + "%",
+    },
+    1000
+  );
+//   $(this).text($(this).attr("data-progress") + "%");
+});
+
+
+
+// 스크램블텍스트
+// 코딩 참고 사이트 코딩 
+// https://www.jqueryscript.net/demo/Animate-Text-With-Random-Characters-jQuery-Descrambler/
+
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+// 오디오 visit 단추
+function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+
+// 오디오 배경 브금 단추
+// var audio = new Audio('./sound/website_background.mp3');
+var audio = document.getElementById('audio');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var count = 0;
+
+function playPause(){
+    if(count == 0){
+        count = 1;
+        audio.play();
+        playPauseBTN.innerHTML = "<font color=#666>PAUSE</font>";
+        document.querySelector(".website_bg_load_pause").style.display = 'none';
+        document.querySelector(".website_bg_load").style.display = 'flex';
+    }else{
+        count = 0;
+        audio.pause();
+        playPauseBTN.innerHTML = "<font color=#34ff67>PLAY</font>";
+        document.querySelector(".website_bg_load").style.display = 'none';
+        document.querySelector(".website_bg_load_pause").style.display = 'flex';
+    }
+    
+}
+</script>
+
+</body>
+</html>
